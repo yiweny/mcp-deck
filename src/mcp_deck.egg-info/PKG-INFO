@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mcp-deck
+Version: 0.1.0
+Summary: A FastMCP + MySQL starter template
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: fastmcp
+Requires-Dist: mysql-connector-python
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+Dynamic: license-file

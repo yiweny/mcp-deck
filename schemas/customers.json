@@ -1,0 +1,41 @@
+{
+  "table_name": "customers",
+  "columns": [
+    {
+      "name": "customer_id",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "FN",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "Active",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "club_member_status",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "fashion_news_frequency",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "age",
+      "type": "DOUBLE",
+      "nullable": true
+    },
+    {
+      "name": "postal_code",
+      "type": "TEXT",
+      "nullable": false
+    }
+  ],
+  "primary_key": "customer_id"
+}

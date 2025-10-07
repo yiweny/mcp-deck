@@ -1,0 +1,131 @@
+{
+  "table_name": "articles",
+  "columns": [
+    {
+      "name": "article_id",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "product_code",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "prod_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "product_type_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "product_type_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "product_group_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "graphical_appearance_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "graphical_appearance_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "colour_group_code",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "colour_group_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "perceived_colour_value_id",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "perceived_colour_value_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "perceived_colour_master_id",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "perceived_colour_master_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "department_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "department_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "index_code",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "index_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "index_group_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "index_group_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "section_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "section_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "garment_group_no",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "garment_group_name",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "detail_desc",
+      "type": "TEXT",
+      "nullable": true
+    }
+  ],
+  "primary_key": "article_id"
+}

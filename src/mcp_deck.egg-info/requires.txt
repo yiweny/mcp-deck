@@ -1,0 +1,5 @@
+fastmcp
+mysql-connector-python
+pandas
+sqlalchemy
+python-dotenv

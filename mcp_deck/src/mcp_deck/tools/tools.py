@@ -1,7 +1,5 @@
-from fastmcp import tool
-from ..db import get_connection
+from mcp_deck.db import get_engine
 
-@tool()
 def query_db(query: str) -> list[dict]:
     """Execute a SQL SELECT query and return results as a list of dicts."""
     conn = get_connection()
@@ -13,7 +11,6 @@ def query_db(query: str) -> list[dict]:
     return rows
 
 
-@tool()
 def get_user_purchase_history(user_id: str) -> list[dict]:
     """Get the purchase history of a user sorted by date."""
     conn = get_connection()

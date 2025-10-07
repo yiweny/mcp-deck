@@ -1,0 +1,46 @@
+{
+  "table_name": "transactions",
+  "columns": [
+    {
+      "name": "t_dat",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "customer_id",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "article_id",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "price",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "sales_channel_id",
+      "type": "BIGINT",
+      "nullable": false
+    }
+  ],
+  "foreign_keys": [
+    {
+      "column": "article_id",
+      "references": {
+        "table": "articles",
+        "column": "article_id"
+      }
+    },
+    {
+      "column": "customer_id",
+      "references": {
+        "table": "customers",
+        "column": "customer_id"
+      }
+    }
+  ]
+}
