@@ -4,7 +4,7 @@ from .config import MYSQL_CONFIG
 
 def get_engine():
     url = (
-        f"mysql+mysqlconnector://{MYSQL_CONFIG['user']}:{MYSQL_CONFIG['password']}"
+        f"mysql+mysqlconnector://{MYSQL_CONFIG['user']}"
         f"@{MYSQL_CONFIG['host']}/{MYSQL_CONFIG['database']}"
     )
     return create_engine(url, echo=False)

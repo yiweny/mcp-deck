@@ -9,7 +9,7 @@ app = FastMCP("MCP Deck", version="0.1")
 
 
 @app.tool()
-def user_purchase_history(user_id: int):
+def user_purchase_history(user_id: str):
     """Expose the get_user_purchase_history tool."""
     return get_user_purchase_history(user_id)
 
