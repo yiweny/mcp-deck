@@ -22,4 +22,4 @@ if __name__ == "__main__":
     load_parquet_to_mysql()
 
     # Now start FastMCP
-    app.run()
+    app.run(host="0.0.0.0", port=8000)
