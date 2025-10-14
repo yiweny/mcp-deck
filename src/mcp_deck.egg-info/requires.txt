@@ -1,4 +1,4 @@
-fastmcp
+fastmcp==2.12.4
 mysql-connector-python
 pandas
 sqlalchemy

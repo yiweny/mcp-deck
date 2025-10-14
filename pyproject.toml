@@ -8,7 +8,7 @@ dependencies = [
     "mysql-connector-python",
     "pandas",
     "sqlalchemy",
-    "python-dotenv"
+    "python-dotenv",
 ]
 
 [tool.setuptools.packages.find]
