@@ -14,3 +14,20 @@ uv run scripts/generate_schema.py --input data/transactions.parquet --output sch
 
 
 ```
+
+
+Initialize the MCP server
+
+```
+uv run python -m mcp_deck.server
+```
+
+
+Run docker somewhere
+
+```
+docker run --name mcpdeck-mysql \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -e MYSQL_DATABASE=mcpdeck \
+  -p 3306:3306 -d mysql:8
+```
