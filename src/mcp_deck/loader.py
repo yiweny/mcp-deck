@@ -89,10 +89,7 @@ def load_parquet_to_db():
     # Load data in the correct order
     for table_name in load_order:
         # Use clean articles data for articles table
-        if table_name == "articles":
-            filename = "articles_clean.parquet"
-        else:
-            filename = f"{table_name}.parquet"
+        filename = f"{table_name}.parquet"
         file_path = os.path.join(DATA_DIR, filename)
 
         if not os.path.exists(file_path):
