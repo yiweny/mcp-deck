@@ -4,7 +4,7 @@
     {
       "name": "t_dat",
       "type": "TEXT",
-      "nullable": false
+      "nullable": true
     },
     {
       "name": "customer_id",
@@ -13,28 +13,51 @@
     },
     {
       "name": "article_id",
-      "type": "BIGINT",
-      "nullable": false
+      "type": "DOUBLE",
+      "nullable": true
     },
     {
       "name": "price",
       "type": "DOUBLE",
-      "nullable": false
+      "nullable": true
     },
     {
       "name": "sales_channel_id",
-      "type": "BIGINT",
+      "type": "DOUBLE",
+      "nullable": true
+    },
+    {
+      "name": "FN",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "Active",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "club_member_status",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "fashion_news_frequency",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "age",
+      "type": "DOUBLE",
+      "nullable": false
+    },
+    {
+      "name": "postal_code",
+      "type": "TEXT",
       "nullable": false
     }
   ],
   "foreign_keys": [
-    {
-      "column": "article_id",
-      "references": {
-        "table": "articles",
-        "column": "article_id"
-      }
-    },
     {
       "column": "customer_id",
       "references": {

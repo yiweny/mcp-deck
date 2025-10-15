@@ -23,11 +23,6 @@ uv run python -m mcp_deck.server
 ```
 
 
-Run docker somewhere
+Database Setup
 
-```
-docker run --name mcpdeck-mysql \
-  -e MYSQL_ROOT_PASSWORD=password \
-  -e MYSQL_DATABASE=mcpdeck \
-  -p 3306:3306 -d mysql:8
-```
+The application uses SQLite and automatically creates a database file `mcp_deck.db` in the project root when the server starts. No additional setup is required.

@@ -1,14 +1,14 @@
 [project]
 name = "mcp-deck"
 version = "0.1.0"
-description = "A FastMCP + MySQL starter template"
+description = "A FastMCP + SQLite starter template"
 requires-python = ">=3.10"
 dependencies = [
     "fastmcp==2.12.4",
-    "mysql-connector-python",
     "pandas",
     "sqlalchemy",
     "python-dotenv",
+    "pyarrow",
 ]
 
 [tool.setuptools.packages.find]

@@ -1,6 +1,6 @@
 from fastmcp import FastMCP
-from mcp_deck.loader import load_parquet_to_mysql
-from mcp_deck.tools.tools import (
+from .loader import load_parquet_to_db
+from .tools.tools import (
     get_user_purchase_history,
     get_details_of_list_of_products,
 )
@@ -23,7 +23,7 @@ def product_details(product_ids: list[int]):
 if __name__ == "__main__":
     # Run any initialization code BEFORE launching the server
     print("Initializing DB and loading data...")
-    load_parquet_to_mysql()
+    load_parquet_to_db()
 
     # Run FastMCP with SSE transport for HTTP access
     app.run(transport="sse", host="0.0.0.0", port=8080)

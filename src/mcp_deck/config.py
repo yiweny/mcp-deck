@@ -4,11 +4,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MYSQL_CONFIG = {
-    "host": os.getenv("MYSQL_HOST", "localhost"),
-    "user": os.getenv("MYSQL_USER", "root"),
-    "password": os.getenv("MYSQL_PASSWORD", ""),
-    "database": os.getenv("MYSQL_DB", "testdb"),
-}
+# SQLite database path
+DATABASE_PATH = os.getenv(
+    "DATABASE_PATH", osp.join(osp.dirname(__file__), "..", "..", "..", "mcp_deck.db")
+)
 
-DATA_DIR = osp.join(osp.dirname(__file__), "..", "..", "..", "data")
+DATA_DIR = osp.join(osp.dirname(__file__), "..", "..", "data")

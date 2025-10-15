@@ -1,12 +1,9 @@
 from sqlalchemy import create_engine
-from .config import MYSQL_CONFIG
+from .config import DATABASE_PATH
 
 
 def get_engine():
-    url = (
-        f"mysql+mysqlconnector://{MYSQL_CONFIG['user']}"
-        f"@{MYSQL_CONFIG['host']}/{MYSQL_CONFIG['database']}"
-    )
+    url = f"sqlite:///{DATABASE_PATH}"
     return create_engine(url, echo=False)
 
 

@@ -36,16 +36,12 @@ def generate_create_table_sql(schema):
             )
 
     columns_block = ",\n".join(columns_sql)
-    sql = (
-        f"CREATE TABLE {table_name} (\n"
-        f"{columns_block}\n"
-        f") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"
-    )
+    sql = f"CREATE TABLE {table_name} (\n{columns_block}\n);"
     return sql
 
 
-def load_parquet_to_mysql():
-    """Load parquet files into MySQL tables using schema definitions."""
+def load_parquet_to_db():
+    """Load parquet files into database tables using schema definitions."""
     engine = get_engine()
 
     if not os.path.isdir(DATA_DIR):
@@ -92,7 +88,11 @@ def load_parquet_to_mysql():
 
     # Load data in the correct order
     for table_name in load_order:
-        filename = f"{table_name}.parquet"
+        # Use clean articles data for articles table
+        if table_name == "articles":
+            filename = "articles_clean.parquet"
+        else:
+            filename = f"{table_name}.parquet"
         file_path = os.path.join(DATA_DIR, filename)
 
         if not os.path.exists(file_path):
