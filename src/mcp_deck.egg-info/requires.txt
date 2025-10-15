@@ -1,5 +1,0 @@
-fastmcp==2.12.4
-pandas
-sqlalchemy
-python-dotenv
-pyarrow
